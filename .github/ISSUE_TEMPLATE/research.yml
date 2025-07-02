@@ -1,0 +1,46 @@
+name: 🔬 연구 / 실험
+description: 실험, 분석, 성능 개선 등 연구 목적의 이슈입니다.
+title: "[Research] "
+labels: ["research"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ✅ 아래 내용을 작성해주세요.
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 목적
+      description: 연구를 하게 된 배경 또는 문제의식을 작성해주세요.
+      placeholder: 예) 기존 모델 정확도가 낮아 개선 방안이 필요함
+    validations:
+      required: true
+  - type: textarea
+    id: content
+    attributes:
+      label: 연구 / 실험 내용
+      description: 어떤 방식으로 연구를 진행할 예정인지 작성해주세요.
+      placeholder: 예) A 알고리즘과 B 알고리즘의 성능 비교
+    validations:
+      required: true
+  - type: textarea
+    id: expected_result
+    attributes:
+      label: 기대 효과
+      description: 어떤 결과나 인사이트를 기대하고 있는지 작성해주세요.
+      placeholder: 예) 최적 모델 도출, 개선된 정확도 수치 확인
+    validations:
+      required: false
+  - type: input
+    id: references
+    attributes:
+      label: 참고 자료 (선택)
+      description: 논문, 문서, 링크 등이 있다면 작성해주세요.
+      placeholder: 예) https://arxiv.org/abs/xxxx.xxxxx
+  - type: input
+    id: author
+    attributes:
+      label: 작성자
+      description: 이름 또는 GitHub ID
+    validations:
+      required: true

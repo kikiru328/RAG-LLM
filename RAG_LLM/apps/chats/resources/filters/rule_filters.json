@@ -1,0 +1,8 @@
+[
+    {
+      "rule_type": "blocked",
+      "keywords": ["blocked keywords"],
+      "reason": "금지된 내용입니다.",
+      "response": "해당 질문은 처리할 수 없습니다."
+    }
+  ]

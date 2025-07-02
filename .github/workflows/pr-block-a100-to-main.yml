@@ -1,0 +1,15 @@
+name: Block PR from a100/* to main
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  prevent-a100-to-main:
+    if: startsWith(github.head_ref, 'a100/') && github.base_ref == 'main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: ❌ Block PR from a100/* to main
+        run: |
+          echo "🚫 PR from branch 'a100/*' to 'main' is not allowed."
+          exit 1
