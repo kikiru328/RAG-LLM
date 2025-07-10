@@ -1,4 +1,4 @@
-# 온프레미스 LLM + RAG 시스템
+# 온프레미스 LLM + RAG 서비스
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://python.org)
 [![LangChain](https://img.shields.io/badge/LangChain-Latest-green.svg)](https://langchain.com)
